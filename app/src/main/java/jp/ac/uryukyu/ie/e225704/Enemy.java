@@ -35,10 +35,12 @@ public class Enemy {
      */
     public void attack(Hero hero){
         int damage = (int)(Math.random() * attack);
-        System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, hero.name, damage);
-        hero.wounded(damage);
+        if(this.hitPoint>0){
+            System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, hero.name, damage);
+            hero.wounded(damage);
+        }
     }
-
+    
     /**
      * 自身へ攻撃されたときのダメージ処理をするメソッド。
      * 指定されたダメージを hitPoint から引き、死亡判定を行う。
