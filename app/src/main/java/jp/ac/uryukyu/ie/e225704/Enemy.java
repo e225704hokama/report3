@@ -54,13 +54,24 @@ public class Enemy {
         }
     }
 
-    /* setterメゾット */
+    /**
+     * モンスターの名前のgetterメゾット。
+     * @return モンスターの名前
+    */
     public String getName(){
         return this.name;
     }
+    /**
+     * モンスターのHPのgetterメゾット。
+     * @return モンスターのHP
+    */
     public int getHitPoint(){
         return this.hitPoint;
     }
+    /**
+     * モンスターの生死判定のgetterメゾット。
+     * @return モンスターの生死判定
+    */
     public boolean getDead(){
         return this.dead;
     }

@@ -52,13 +52,24 @@ public class Hero {
         }
     }
 
-    /* setterメゾット */
+    /**
+     * ヒーローの名前のgetterメゾット。
+     * @return ヒーローの名前
+    */
     public String getName(){
         return this.name;
     }
+    /**
+     * ヒーローのHPのgetterメゾット。
+     * @return ヒーローのHP
+     */
     public int getHitPoint(){
         return this.hitPoint;
     }
+    /**
+     * ヒーローの生死判定のgetterメゾット
+     * @return ヒーローの生死判定
+     */
     public boolean getDead(){
         return this.dead;
     }
